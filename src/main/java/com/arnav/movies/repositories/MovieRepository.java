@@ -17,5 +17,5 @@ public interface MovieRepository extends MongoRepository<Movie, ObjectId> {
     // using AUTOMATIC QUERY
 
 
-//    Optional<Movie> findMovieByImdbId(String imdbId);
+    Optional<Movie> findMovieById(ObjectId id);
 }
